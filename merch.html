@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уютная полочка мерча — Woorie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="site-logo">Woorie</a>
+            <button class="hamburger" aria-label="Открыть меню">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="comics.html">Комиксы</a></li>
+                    <li><a href="about.html">Об авторе</a></li>
+                    <li><a href="merch.html" class="active">Мерч</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент магазина (СТРОГО ОДИН КОНТЕЙНЕР) -->
+    <main class="merch-container">
+        <header class="merch-header">
+            <h1>Уютная полочка мерча</h1>
+            <p class="subtitle">Официальные книги, стильная одежда и памятные сувениры от Woorie</p>
+        </header>
+
+        <!-- Кнопки сортировки -->
+        <div class="merch-filters">
+            <button class="filter-btn active" data-category="all">Все товары</button>
+            <button class="filter-btn" data-category="books">Книги</button>
+            <button class="filter-btn" data-category="gifts">Сувениры</button>
+            <button class="filter-btn" data-category="clothes">Одежда</button>
+        </div>
+
+        <!-- Сетка товаров (класс merch-grid) -->
+        <div class="merch-grid">
+            
+            <!-- КНИГИ -->
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/MeaningV1-book.webp" alt="Комикс Смысл. Том 1"></div>
+                <div class="comic-info">
+                    <h3>Комикс «Смысл. Том 1»</h3>
+                    <div class="comic-meta"><span class="price">~ 1500 ₽</span><a href="https://www.wildberries.ru/catalog/1007583179/detail.aspx" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/MeaningV2-book.webp" alt="Комикс Смысл. Том 2"></div>
+                <div class="comic-info">
+                    <h3>Комикс «Смысл. Том 2»</h3>
+                    <div class="comic-meta"><span class="price">~ 1500 ₽</span><a href="https://www.wildberries.ru/catalog/259800617/detail.aspx?targetUrl=MI" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/MeaningV3-book.webp" alt="Комикс Смысл. Том 3"></div>
+                <div class="comic-info">
+                    <h3>Комикс «Смысл. Том 3»</h3>
+                    <div class="comic-meta"><span class="price">~ 1500 ₽</span><a href="https://www.wildberries.ru/catalog/832498642/detail.aspx" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/latte-book.webp" alt="Комикс Карамельный латте"></div>
+                <div class="comic-info">
+                    <h3>Комикс «Карамельный латте»</h3>
+                    <div class="comic-meta"><span class="price">~ 800 ₽</span><a href="https://www.wildberries.ru/catalog/236987433/detail.aspx?targetUrl=MI" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/Artbook.webp" alt="Woorie. Артбук"></div>
+                <div class="comic-info">
+                    <h3>Woorie. Артбук</h3>
+                    <div class="comic-meta"><span class="price">~ 1400 ₽</span><a href="https://www.wildberries.ru/catalog/1088616651/detail.aspx" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="books">
+                <div class="comic-cover"><img src="images/chamomile-book.webp" alt="Комикс Жизнь пахнет ромашкой"></div>
+                <div class="comic-info">
+                    <h3>Комикс «Жизнь пахнет ромашкой»</h3>
+                    <div class="comic-meta"><span class="price">~ 850 ₽</span><a href="https://www.wildberries.ru/catalog/898239901/detail.aspx" target="_blank" class="read-btn btn-dark">Купить</a></div>
+                </div>
+            </article>
+
+            <!-- СУВЕНИРЫ -->
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/boosty-banner.png" alt="Boosty"></div>
+                <div class="comic-info">
+                    <h3>Ранний доступ и скетчи</h3>
+                    <div class="comic-meta"><span class="price">от 100 ₽ / мес</span><a href="https://boosty.to" target="_blank" class="read-btn">Поддержать</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/СМЫСЛ_pin2__1_.webp" alt="Металлический пин СМЫСЛ. Огонь"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Металлический пин «СМЫСЛ. Огонь»</h3>
+                    <div class="comic-meta"><span class="price">250 ₽</span><a href="https://edgecomics.ru/product/metallicheskiy-pin-smysl-ogon" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/СМЫСЛ_pin1__1_.webp" alt="Металлический pin СМЫСЛ. Эрни"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Металлический пин «СМЫСЛ. Эрни»</h3>
+                    <div class="comic-meta"><span class="price">250 ₽</span><a href="https://edgecomics.ru/product/metallicheskiy-pin-smysl-erni" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/AcrylicKeychainMEANING1.webp" alt="Акриловый брелок СМЫСЛ. Трубочка"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Акриловый брелок «СМЫСЛ. Трубочка»</h3>
+                    <div class="comic-meta"><span class="price">499 ₽</span><a href="https://edgecomics.ru/product/akrilovyy-brelok-smysl-trubochka-zveryata-bolshoy-dvustoronniy" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/AcrylicKeychainMEANING2.webp" alt="Брелок Трубочка To Do List"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Акриловый брелок «To Do List»</h3>
+                    <div class="comic-meta"><span class="price">499 ₽</span><a href="https://edgecomics.ru/product/akrilovyy-brelok-smysl-trubochka-to-do-list-bolshoy-dvustoronniy" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/PostcardMeaningLost.webp" alt="Открытка СМЫСЛ. Пропащая"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Открытка «СМЫСЛ. Пропащая»</h3>
+                    <div class="comic-meta"><span class="price">199 ₽</span><a href="https://edgecomics.ru/product/otkrytka-smysl-propaschaya" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/PostcardMeaning2.webp" alt="Открытка С замиранием сердца"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Открытка «С замиранием сердца»</h3>
+                    <div class="comic-meta"><span class="price">199 ₽</span><a href="https://edgecomics.ru/product/otkrytka-smysl-s-zamiraniem-serdtsa" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+            <article class="comic-card" data-cat="gifts">
+                <div class="comic-cover"><img src="images/PostcardMeaning3.webp" alt="Открытка Виктор"></div>
+                <div class="comic-info">
+                    <div class="comic-meta"><span class="tag tag-life">Сувениры</span></div>
+                    <h3>Открытка «СМЫСЛ. Виктор»</h3>
+                    <div class="comic-meta"><span class="price">199 ₽</span><a href="https://edgecomics.ru/product/otkrytka-smysl-viktor" target="_blank" class="read-btn">Купить</a></div>
+                </div>
+            </article>
+
+<!-- Товар 15: Открытка Ты не один -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaning4.webp" alt="Открытка СМЫСЛ. Ты не один">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Ты не один»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-smysl-ty-ne-odin" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Товар 16: Открытка Если утонешь в чувствах -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaning5.webp" alt="Открытка СМЫСЛ. Если утонешь в чувствах">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Если утонешь в чувствах»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-smysl-esli-utonesh-v-chuvstvah" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка Ник -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningNik.webp" alt="Открытка СМЫСЛ. Ник">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Ник»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-smysl-nik" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка Разные -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningDifferent.webp" alt="Открытка СМЫСЛ. Разные">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Разные»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-raznye" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+<!-- Открытка Чувства как плёнка -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningFeelings.webp" alt="Открытка СМЫСЛ. Чувства как плёнка">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Чувства как плёнка»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-chuvstva-kak-plyonka" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка В саду колокольчиков -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningGarden.webp" alt="Открытка СМЫСЛ. В саду колокольчиков">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. В саду колокольчиков»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-v-sadu-kolokolchikov" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка То, что под маской -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningMask.webp" alt="Открытка СМЫСЛ. То, что под маской">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «То, что под маской»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-to-chto-pod-maskoy" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка Сладкие сны -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningDreams.webp" alt="Открытка СМЫСЛ. Сладкие сны">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Сладкие сны»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-sladkie-sny" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Открытка Диего -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/PostcardMeaningDjenao.webp" alt="Открытка СМЫСЛ. Диего">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Открытка «СМЫСЛ. Диего»</h3>
+        <div class="comic-meta">
+            <span class="price">199 ₽</span>
+            <a href="https://edgecomics.ru/product/otkrytka-dzhena" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+<!-- Акриловый брелок Ник -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/KeychainMeaningNik.webp" alt="Акриловый брелок СМЫСЛ. Ник">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый брелок «СМЫСЛ. Ник»</h3>
+        <div class="comic-meta">
+            <span class="price">369 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-brelok-nik" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый брелок Джена -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/KeychainMeaningDjena.webp" alt="Акриловый брелок СМЫСЛ. Джена">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый брелок «СМЫСЛ. Джена»</h3>
+        <div class="comic-meta">
+            <span class="price">389 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-brelok-dzhena" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый брелок Эрной -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/KeychainMeaningErni.webp" alt="Акриловый брелок СМЫСЛ. Эрни">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый брелок «СМЫСЛ. Эрни»</h3>
+        <div class="comic-meta">
+            <span class="price">369 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-brelok-erni" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый стенд Ник -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/StandMeaningNik.webp" alt="Акриловый стенд СМЫСЛ. Ник">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый стенд «СМЫСЛ. Ник»</h3>
+        <div class="comic-meta">
+            <span class="price">999 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-stend-nik" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый стенд Джена -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/StandMeaningDjena.webp" alt="Акриловый стенд СМЫСЛ. Джена">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый стенд «СМЫСЛ. Джена»</h3>
+        <div class="comic-meta">
+            <span class="price">999 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-stend-dzhena" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+<!-- Акриловый стенд Эрни -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/StandMeaningErni.webp" alt="Акриловый стенд СМЫСЛ. Эрни">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый стенд «СМЫСЛ. Эрни»</h3>
+        <div class="comic-meta">
+            <span class="price">999 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-stend-erni" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый стенд Виктор -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/StandMeaningViktor.webp" alt="Акриловый стенд СМЫСЛ. Виктор">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый стенд «СМЫСЛ. Виктор»</h3>
+        <div class="comic-meta">
+            <span class="price">999 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-stend-viktor" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Акриловый стенд Мы сплетницы -->
+<article class="comic-card" data-cat="gifts">
+    <div class="comic-cover">
+        <img src="images/StandMeaningGossip.webp" alt="Акриловый стенд СМЫСЛ. Мы сплетницы">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-life">Сувениры</span>
+        </div>
+        <h3>Акриловый стенд «СМЫСЛ. Мы сплетницы»</h3>
+        <div class="comic-meta">
+            <span class="price">999 ₽</span>
+            <a href="https://edgecomics.ru/product/akrilovyy-stend-ne-spletnitsy" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Футболка СМЫСЛ. Эрни -->
+<article class="comic-card" data-cat="clothes">
+    <div class="comic-cover">
+        <img src="images/TshirtMeaningErni.webp" alt="Футболка СМЫСЛ. Эрни">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-philosophy">Одежда</span>
+        </div>
+        <h3>Футболка «СМЫСЛ. Эрни»</h3>
+        <div class="comic-meta">
+            <span class="price">3 499 ₽</span>
+            <a href="https://edgecomics.ru/product/smysl-crowdfunding-futbolka-erni" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+<!-- Футболка СМЫСЛ. Огонь -->
+<article class="comic-card" data-cat="clothes">
+    <div class="comic-cover">
+        <img src="images/TshirtMeaningFire.webp" alt="Футболка СМЫСЛ. Огонь">
+    </div>
+    <div class="comic-info">
+        <div class="comic-meta">
+            <span class="tag tag-philosophy">Одежда</span>
+        </div>
+        <h3>Футболка «СМЫСЛ. Огонь»</h3>
+        <div class="comic-meta">
+            <span class="price">3 499 ₽</span>
+            <a href="https://edgecomics.ru/product/smysl-crowdfunding-futbolka-ogon" target="_blank" class="read-btn">Купить на Edge Comics</a>
+        </div>
+    </div>
+</article>
+
+</div> <!-- Правильно закрываем блок merch-grid -->
+</main> <!-- Правильно закрываем тег main -->
+    <!-- Единственный рабочий скрипт для страницы мерча -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 1. Мобильное бургер-меню
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.site-header nav');
+
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    nav.classList.toggle('open');
+                    
+                    // Меняем иконку без багов
+                    if (nav.classList.contains('open')) {
+                        hamburger.textContent = '✕';
+                    } else {
+                        hamburger.textContent = '☰';
+                    }
+                });
+            }
+
+            // 2. Интерактивная сортировка мерча по категориям
+            const filterButtons = document.querySelectorAll('.merch-filters .filter-btn');
+            const cards = document.querySelectorAll('.merch-grid .comic-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Переключаем активный класс на кнопках
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Получаем выбранную категорию
+                    const targetCategory = this.getAttribute('data-category');
+
+                    // Фильтруем карточки
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-cat');
+                        if (targetCategory === 'all' || cardCategory === targetCategory) {
+                            card.classList.remove('hide'); // Показываем
+                        } else {
+                            card.classList.add('hide');    // Скрываем
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

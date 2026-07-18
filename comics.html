@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woorie — Каталог комиксов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="nav-container">
+        <!-- Логотип или имя автора слева -->
+        <a href="index.html" class="site-logo">Woorie</a>
+        
+        <!-- Кнопка для мобильных -->
+        <button class="hamburger" aria-label="Открыть меню">☰</button>
+        
+        <!-- Чистая навигация без выпадающих списков -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="comics.html">Комиксы</a></li>
+                <li><a href="about.html">Об авторе</a></li>
+                <li><a href="merch.html">Мерч</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="comics-container">
+        <header class="page-title">
+            <h1>Каталог комиксов</h1>
+            <p>Терапевтические и уютные истории, которые согревают сердце.</p>
+        </header>
+
+        <!-- Блок фильтрации с дата-аттрибутами -->
+        <div class="comics-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="romance">Романтика</button>
+            <button class="filter-btn" data-filter="life">Жизненно</button>
+            <button class="filter-btn" data-filter="philosophy">Философия</button>
+        </div>
+
+        <!-- Визуальная сетка с карточками комиксов -->
+        <div class="comics-grid">
+            
+            <!-- Карточка 1: Капучино с маршмэллоу -->
+            <article class="comic-card" id="cappuccino" data-genre="romance">
+                <div class="comic-cover">
+                    <img src="images/cappuccino-cover.jpg" alt="Обложка Капучино с маршмэллоу">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-romance">Романтика</span>
+                        <span class="tag tag-life">Жизненно</span>
+                        <span class="comic-year">2020 г.</span>
+                    </div>
+                    <h3>Капучино с маршмэллоу</h3>
+                    <p class="comic-desc">Нежная история о тепле, поиске себя и уютных кофейных вечерах.</p>
+                    <a href="https://mangaonelove.website/manga/rumanga-kapuchino-s-marshmjellou-cappuccinos-with-marshmallows/" class="read-btn">Читать историю</a>
+                </div>
+            </article>
+
+            <!-- Карточка 2: Карамельный латте -->
+            <article class="comic-card" id="latte" data-genre="romance">
+                <div class="comic-cover">
+                    <img src="images/latte-cover.jpg" alt="Обложка Карамельный латте">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-romance">Романтика</span>
+                        <span class="tag tag-life">Жизненно</span>
+                        <span class="comic-year">2021 г.</span>
+                    </div>
+                    <h3>Карамельный латте</h3>
+                    <p class="comic-desc">Продолжение кофейных историй, наполненных искренними чувствами.</p>
+                    
+                </div>
+            </article>
+
+            <!-- Карточка 3: Смысл -->
+            <article class="comic-card" id="meaning" data-genre="philosophy">
+                <div class="comic-cover">
+                    <img src="images/meaning-cover1.jpg" alt="Обложка Смысл">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-philosophy">Философия</span>
+                        <span class="comic-year">2021 г.</span>
+                    </div>
+                    <h3>Смысл</h3>
+                    <p class="comic-desc">Глубокая история о кризисе, надежде и внутренней силе. Эрни учится жить, когда мир кажется бессмысленным.</p>
+                    <a href="https://mangaonelove.website/manga/smysl/" class="read-btn">Читать историю</a>
+                </div>
+            </article>
+
+                        <!-- Карточка 4: Дыши -->
+            <article class="comic-card" id="breathe" data-genre="philosophy">
+                <div class="comic-cover">
+                    <img src="images/breathe-cover.jpg" alt="Обложка Дыши">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-philosophy">Философия</span>
+                        <span class="comic-year">2021 г.</span>
+                    </div>
+                    <h3>Дыши</h3>
+                    <p class="comic-desc">Глубокий терапевтический комикс для тех, кто ищет капельку поддержки в трудный день.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 5: Взаправду ерунда -->
+            <article class="comic-card" id="nothing" data-genre="life">
+                <div class="comic-cover">
+                    <img src="images/nothing-cover2.jpg" alt="Обложка Взаправду ерунда">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-life">Жизненно</span>
+                        <span class="comic-year">2022 г.</span>
+                    </div>
+                    <h3>Взаправду ерунда</h3>
+                    <p class="comic-desc">Милые зарисовки о том, что мелкие неудачи — это пустяки, если рядом есть тепло и чашка чая.</p>
+                    <a href="https://mangaonelove.website/manga/vzapravdu-erunda-perezapusk/" class="read-btn">Читать историю</a>
+                </div>
+            </article>
+
+            <!-- Карточка 6: Жизнь пахнет ромашкой -->
+            <article class="comic-card" id="chamomile" data-genre="life">
+                <div class="comic-cover">
+                    <img src="images/chamomile-cover1.jpg" alt="Обложка Жизнь пахнет ромашкой">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-life">Жизненно</span>
+                        <span class="comic-year">2022 г.</span>
+                    </div>
+                    <h3>Жизнь пахнет ромашкой</h3>
+                    <p class="comic-desc">История о поиске простых радостей в повседневной суете и умении замечать прекрасное вокруг.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 7: Звездочка -->
+            <article class="comic-card" id="asterisks" data-genre="romance">
+                <div class="comic-cover">
+                    <img src="images/asterisks-cover.jpg" alt="Обложка Звездочка">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-romance">Романтика</span>
+                        <span class="comic-year">2023 г.</span>
+                    </div>
+                    <h3>Звездочка</h3>
+                    <p class="comic-desc">Две юные ведьмочки учатся магии, дружбе и первым чувствам. Лёгкий сёдзе‑ай комикс о волшебных мелочах: чае с заклинаниями, полётах на мётлах и робких признаниях.</p>
+                    <a href="reader-asterisks.html" class="read-btn">Читать историю</a>
+                </div>
+            </article>
+
+            <!-- Карточка 8: Воронье крыло -->
+            <article class="comic-card" id="crow" data-genre="philosophy">
+                <div class="comic-cover">
+                    <img src="images/crow-cover.jpg" alt="Обложка Воронье крыло">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-philosophy">Философия</span>
+                        <span class="comic-year">2023 г.</span>
+                    </div>
+                    <h3>Воронье крыло</h3>
+                    <p class="comic-desc">мир разделён на две части — земли монстров и людей. Уже не первый год в мире бушует война. Вопрос в том, кто окажется человечнее.</p>
+                    <a href="https://mangaonelove.website/manga/vorone-krylo/" class="read-btn">Читать историю</a>
+                </div>
+            </article>
+
+            <!-- Карточка 9: Кассиан -->
+            <article class="comic-card" id="Cassian" data-genre="life">
+                <div class="comic-cover">
+                    <img src="images/Cassian-cover.jpg" alt="Обложка Кассиан">
+                </div>
+                <div class="comic-info">
+                    <div class="comic-meta">
+                        <span class="tag tag-life">Жизненно</span>
+                        <span class="comic-year">2024 г.</span>
+                    </div>
+                    <h3>Кассиан</h3>
+                    <p class="comic-desc">Кассиан — вампир в современном мире: ночные клубы, соцсети и вечная жизнь. Но даже бессмертие не спасает от одиночества. Сможет ли он найти своё место среди людей?</p>
+                </div>
+            </article>
+
+        </div> <!-- Закрытие .comics-grid -->
+    </main> <!-- Закрытие .comics-container -->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Находим кнопку-бургер и сам тег навигации nav
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.site-header nav');
+
+        if (hamburger && nav) {
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation(); // Предотвращаем баги с кликами
+                
+                // Переключаем класс open у меню
+                nav.classList.toggle('open');
+                
+                // Меняем иконку с ☰ на ✕ и обратно
+                if (nav.classList.contains('open')) {
+                    hamburger.textContent = '✕';
+                } else {
+                    hamburger.textContent = '☰';
+                }
+            });
+        }
+
+        // --- ЛОГИКА ФИЛЬТРАЦИИ КОМИКСОВ ---
+        const filterButtons = document.querySelectorAll('.comics-filters .filter-btn');
+        const cards = document.querySelectorAll('.comics-grid .comic-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetCategory = this.getAttribute('data-category');
+
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-cat');
+                    if (targetCategory === 'all' || cardCategory === targetCategory) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

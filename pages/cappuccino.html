@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Читать: Капучино с маршмэллоу — Woorie</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Путь к CSS на уровень выше -->
+</head>
+<body class="reader-body">
+
+    <!-- Упрощенная шапка для читалки (чтобы не отвлекать от комикса) -->
+    <header class="reader-header">
+        <div class="reader-nav-container">
+            <a href="../comics.html" class="back-link">← К каталогу</a>
+            <h1 class="comic-reader-title">Капучино с маршмэллоу</h1>
+            <span class="chapter-info">Глава 1</span>
+        </div>
+    </header>
+
+    <!-- Лента страниц комикса -->
+    <main class="comic-reader-container">
+        <div class="comic-pages-stack">
+            <!-- Замените пути в src на реальные файлы ваших страниц комикса -->
+            <img src="../images/comics/cappuccino/page1.jpg" alt="Страница 1" class="reader-page-img">
+            <img src="../images/comics/cappuccino/page2.jpg" alt="Страница 2" class="reader-page-img">
+            <img src="../images/comics/cappuccino/page3.jpg" alt="Страница 3" class="reader-page-img">
+            <img src="../images/comics/cappuccino/page4.jpg" alt="Страница 4" class="reader-page-img">
+        </div>
+
+        <!-- Нижняя навигация между главами -->
+        <footer class="reader-footer-nav">
+            <button class="btn-page-nav disabled" disabled>Предыдущая глава</button>
+            <a href="../comics.html" class="btn-page-nav home-btn">В каталог</a>
+            <a href="#" class="btn-page-nav active-next">Следующая глава →</a>
+        </footer>
+    </main>
+
+</body>
+</html>

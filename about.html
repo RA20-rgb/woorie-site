@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Woorie — Мастерская автора</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="site-logo">Woorie</a>
+            <button class="hamburger" aria-label="Открыть меню">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="comics.html">Комиксы</a></li>
+                    <li><a href="about.html" class="active">Об авторе</a></li>
+                    <li><a href="merch.html">Мерч</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <section class="about-hero">
+            <div class="about-avatar">
+                <img src="images/woorie-avatar.jpg" alt="Художница Woorie">
+            </div>
+            <div class="about-bio">
+                <h1>Привет, это Woorie!</h1>
+                <p>Woorie создаёт уютные истории в жанре slice of life. В её работах акцент делается не на динамичном сюжете, а на передаче эмоций и повседневных переживаний героев. Художница часто затрагивает темы поиска себя, дружбы, преодоления трудностей и работы с психологическими проблемами (депрессия, ПТСР, тревожность). </p>
+            </div>
+        </section>
+
+        <section class="details-card workshop-card">
+            <h3>🛠️ На чём я рисую?</h3>
+            <p class="card-intro">Информация для начинающих иллюстраторов:</p>
+            <ul>
+                <li><strong>Программы:</strong> Photoshop, Clip Studio Paint</li>
+                <li><strong>Инструменты:</strong> Графический планшет-монитор</li>
+                <li><strong>Стиль:</strong> Мягкие пастельные кисти, теплая гамма</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('open');
+                hamburger.textContent = nav.classList.contains('open') ? '✕' : '☰';
+            });
+        });
+    </script>
+</body>
+</html>
